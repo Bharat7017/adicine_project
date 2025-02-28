@@ -18,20 +18,33 @@ class FoodTimingSelection extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: foodTimings.map((timing) {
-          return Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: ChoiceChip(
-              label: Text(timing),
-              selected: intakeTime == timing,
-              onSelected: (selected) {
-                if (selected) {
-                  onTimeSelected(timing);
-                }
-              },
-            ),
-          );
-        }).toList(),
+        children:
+            foodTimings.map((timing) {
+              return Padding(
+                padding: const EdgeInsets.only(right: 10),
+                child: ChoiceChip(
+                  label: Text(timing, style: TextStyle(color: Colors.black)),
+                  selected: intakeTime == timing,
+                  selectedColor: Color.fromARGB(255, 115, 134, 242),
+                  backgroundColor: Colors.grey[300],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    side: BorderSide(
+                      color:
+                          intakeTime == timing
+                              ? Color.fromARGB(255, 115, 134, 242)
+                              : Colors.grey,
+                    ),
+                  ),
+                  onSelected: (selected) {
+                    if (selected) {
+                      onTimeSelected(timing);
+                    }
+                  },
+                  showCheckmark: false,
+                ),
+              );
+            }).toList(),
       ),
     );
   }

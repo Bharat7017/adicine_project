@@ -26,7 +26,32 @@ class MedicineList extends StatelessWidget {
     return ListView.builder(
       itemCount: medicines.length,
       itemBuilder: (context, index) {
-        return MedicineCard(medicine: medicines[index]);
+        return Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Morning 08:00 am',
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+              ),
+              MedicineCard(medicine: medicines[index]),
+              MedicineCard(medicine: medicines[index]),
+              SizedBox(height: 10),
+              Text(
+                'Afternoon 02:00 pm',
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+              ),
+              MedicineCard(medicine: medicines[index]),
+              SizedBox(height: 10),
+              Text(
+                'Night 09:00 pm',
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+              ),
+              MedicineCard(medicine: medicines[index]),
+            ],
+          ),
+        );
       },
     );
   }

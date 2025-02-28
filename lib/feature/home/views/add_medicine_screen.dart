@@ -20,6 +20,14 @@ class AddMedicineScreen extends StatefulWidget {
 }
 
 class _AddMedicineScreenState extends State<AddMedicineScreen> {
+  List<TimeOfDay?> selectedTimes = [];
+
+  void updateSelectedTimes(List<TimeOfDay?> times) {
+    setState(() {
+      selectedTimes = times;
+    });
+  }
+
   Color selectedColor = Colors.purple;
   String selectedType = "Tablet";
   int quantity = 1;

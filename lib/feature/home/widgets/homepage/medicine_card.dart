@@ -36,23 +36,26 @@ class MedicineCard extends StatelessWidget {
     }
 
     return Card(
-      margin: EdgeInsets.all(10),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundColor: medicine['color'] ?? Colors.blueAccent,
-          child: Icon(Icons.medication, color: Colors.white),
-        ),
-        title: Text('$medicineName $medicineType'),
-        subtitle: Text('$time  |  $frequency'),
-        trailing: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(statusIcon, color: statusColor),
-            Text(
-              statusText,
-              style: TextStyle(fontSize: 12, color: statusColor),
-            ),
-          ],
+      margin: EdgeInsets.all(5),
+      child: SizedBox(
+        height: 80,
+        child: ListTile(
+          leading: CircleAvatar(
+            backgroundColor: medicine['color'] ?? Colors.blueAccent,
+            child: Icon(Icons.medication, color: Colors.white),
+          ),
+          title: Text('$medicineName $medicineType'),
+          subtitle: Text('$time  |  $frequency'),
+          trailing: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(statusIcon, color: statusColor),
+              Text(
+                statusText,
+                style: TextStyle(fontSize: 12, color: statusColor),
+              ),
+            ],
+          ),
         ),
       ),
     );

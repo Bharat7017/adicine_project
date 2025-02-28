@@ -4,7 +4,7 @@ class DoseSelection extends StatefulWidget {
   const DoseSelection({super.key});
 
   @override
-  _DoseSelectionState createState() => _DoseSelectionState();
+  State<DoseSelection> createState() => _DoseSelectionState();
 }
 
 class _DoseSelectionState extends State<DoseSelection> {
