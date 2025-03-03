@@ -25,5 +25,5 @@ samples, guidance on mobile development, and a full API reference.
 ![Simulator Screenshot - iPhone 16 Pro - 2025-02-28 at 16 25 13](https://github.com/user-attachments/assets/652552d3-2749-4e99-a27c-c48eac5b8f17)
 ![Simulator Screenshot - iPhone 16 Pro - 2025-02-28 at 16 23 10](https://github.com/user-attachments/assets/92ccdabc-f902-4d42-b1f2-0aaa4cb6ff1f)
 
-[Screen Recording 2025-03-03 at 9.52.07 PM.mov.zip](https://github.com/user-attachments/files/19056353/Screen.Recording.2025-03-03.at.9.52.07.PM.mov.zip)
 
+[Screen Recording 2025-03-03 at 10.29.41 PM.mov.zip](https://github.com/user-attachments/files/19056838/Screen.Recording.2025-03-03.at.10.29.41.PM.mov.zip)
